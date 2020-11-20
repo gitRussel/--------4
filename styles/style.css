@@ -49,12 +49,12 @@ html{
     align-items: center;  
     position: fixed;
     top: 20px;
-    left: 20px;
+    right: 20px;
     width: 26px;
     height: 26px;
     cursor: pointer;
     z-index: 1;
-    visibility: hidden;
+    display: none;
 }
 .menu__btn > span,
 .menu__btn > span::before,
@@ -106,6 +106,7 @@ html{
     text-decoration: none;
     color: #696969;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 .menu__link_state_active{
     color: #1f1f1f;
@@ -148,6 +149,7 @@ html{
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
+    padding-top: 45px;
 }
 .section-header__description{
     width: 40%;
@@ -169,9 +171,7 @@ html{
     padding: 30px 0px;
     width: 100%;
 }
-.calendar__album-description{
-    word-wrap: break-word;
-}
+
 .calendar__left-column{
     display: flex;
     flex-direction: column;
@@ -204,6 +204,7 @@ html{
 .calendar__album-description{
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
+    word-wrap: break-word;
     color: #acacac;
     padding-top: 13px;
     padding-bottom: 30px;
@@ -376,6 +377,7 @@ html{
     max-width: 1200px;
     box-sizing: border-box;
     align-content: space-around;
+    padding-top: 75px;
 }
 .album-cards__item {
     width: 320px;
@@ -636,7 +638,7 @@ html{
     }
 
 }
-@media screen and (max-width: 980px){
+@media screen and (max-width: 1100px){
     .upcoming-events__block{
         margin-left: 0px;
     }
@@ -655,7 +657,7 @@ html{
         visibility: hidden;
     }
     .menu__btn{
-        visibility: visible;
+        display: flex;
     }
 }
 @media screen and (max-width: 660px){
