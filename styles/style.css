@@ -254,6 +254,10 @@ html{
     border: 1px solid black;
     text-transform: none;
 }
+.calendar__button:hover{
+    cursor: pointer;
+    opacity: .8;
+}
 .concert-tours__description{
     color: #798285;
 }
@@ -537,6 +541,14 @@ html{
     border-left: 1px solid black;
     padding-left: 20px;
     box-sizing: border-box;
+}
+.contact__social-media > div:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+.contact-form__submit:hover {
+    cursor: pointer;
+    opacity: .8;
 }
 @media screen and (max-height: 900px){
     .section{
