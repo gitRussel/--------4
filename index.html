@@ -7,6 +7,8 @@
     <title>John Doe</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </head>
 <body class="page">
@@ -195,19 +197,44 @@
         </div>
     </section>
     <section id="slider" class="section slider">
-        <div class="slider__note">
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="slider__note">
+                    </div>
+                    <div class="slider__title">
+                        <h2 class="slider__title-top">In 2008, lead singer Dan Reynolds met</h2>
+                        <h2 class="slider__title-bottom">drummer Andrew Tolman at Brigham Young University where they were both students</h2>
+                    </div>
+                    <p class="slider__description">Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon, who had graduated from Berklee College of Music. Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys. </p>
+                    <p class="slider__date">- Early years (2008–10)</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__note">
+                    </div>
+                    <div class="slider__title">
+                        <h2 class="slider__title-top">In 2011, lead singer Dan Reynolds met</h2>
+                        <h2 class="slider__title-bottom"> A soulful singer/songwriter from a small English town with a penchant for crafting moving and evocative folk-pop confections in the vein of Ed Sheeran, Foy Vance</h2>
+                    </div>
+                    <p class="slider__description">Video system (more than 20,000 screens at all 151 locations worldwide) on February 17, 2014.[37] Also, autographed t-shirts 
+                        will be hidden throughout the Hard Rock Cafe </p>
+                    <p class="slider__date">(2011–12)</p>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider__note">
+                    </div>
+                    <div class="slider__title">
+                        <h2 class="slider__title-top">In 2015, Hard Rock Cafe teamed with the band</h2>
+                        <h2 class="slider__title-bottom">drummer Andrew Tolman at Brigham Young University where they were both students</h2>
+                    </div>
+                    <p class="slider__description">In 2015 a world tour, entitled the Smoke and Mirrors Tour is scheduled in promotion </p>
+                    <p class="slider__date">(2015–10)</p>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <div class="slider__title">
-            <h2 class="slider__title-top">In 2008, lead singer Dan Reynolds met</h2>
-            <h2 class="slider__title-bottom">drummer Andrew Tolman at Brigham Young University where they were both students</h2>
-        </div>
-        <p class="slider__description">Tolman recruited longtime high school friend Daniel Wayne "Wing" Sermon, who had graduated from Berklee College of Music. Tolman later recruited his wife, Brittany Tolman, to sing backup and play keys. </p>
-        <p class="slider__date">- Early years (2008–10)</p>
-        <div class="radio-buttons">
-            <input type="radio" name="slider__first" class="radio-buttons__item radio-buttons__item_active"/>
-            <input type="radio" name="slider__second" class="radio-buttons__item"/>
-            <input type="radio" name="slider__third" class="radio-buttons__item"/>
-        </div>
+        <div class="swiper-pagination"></div>
     </section>
     <section id="new" class="section new">
         <div class="album-cards">

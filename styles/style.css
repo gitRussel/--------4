@@ -40,6 +40,7 @@ html{
     position: fixed;
     margin-top:-150px;
     width: 100%;
+    z-index: 2;
 }
 #menu__toggle {
     opacity: 0;
@@ -309,19 +310,23 @@ html{
     margin: 20px;
 }
 /*--Slider Section--*/
-.slider{
+.slider {
     background-image: url("img/slider-bg.png");
+    background-size: cover;
+    padding: 30px 0px;
+    height: 100%;
+}
+.swiper-slide {
     display:flex;
     flex-direction: column;
     align-items: center;
-    background-size: cover;
 }
 .slider__note{
     background-image: url("img/note.png");
     background-repeat: no-repeat;
     width: 130px;
     height: 30px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .slider__title{
     opacity: .7;
@@ -355,13 +360,11 @@ html{
     margin-top: 70px;
     color: #565e61;
 }
-.radio-buttons{
-    margin-top: 70px;
+.swiper-pagination {
+    width: 100%;
 }
-.radio-buttons__item{
-    width: 15px;
-    height: 15px;
-    margin: 0px 15px;
+.swiper-pagination-bullet {
+    margin: 4px;
 }
 /*--New Section--*/
 .new{
@@ -552,7 +555,7 @@ html{
     cursor: pointer;
     opacity: .8;
 }
-@media screen and (max-height: 900px){
+@media screen and (max-height: 900px) {
     .section{
         height: 100%;
     }
@@ -561,10 +564,6 @@ html{
     }
     .menu {
         margin-top: -100px;
-    }
-    .header__logo {
-        height: 80%;
-        margin-top: 0px;
     }
     .radio-buttons {
         margin: 30px 0px;
